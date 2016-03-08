@@ -1,0 +1,82 @@
+﻿ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    left:-8px;
+    top: 70px;    
+    background-color: #808080;
+    box-shadow: 2px 4px rgba(0,0,0,0.2);
+    z-index: 3000;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.clearfix {
+    zoom:1;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #808080;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.facebook {
+    background-image: url('assets/facebook-logo.png');
+    background-size: cover;
+    background-position:center;
+    width:45px;
+    height:45px;
+}
+
+.twitter {
+    background-image: url('assets/twitter-logo.png');
+    background-size: cover;
+    background-position:center;
+    width:45px;
+    height:45px;
+}
+
+

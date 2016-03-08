@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{D2D2917D-1B32-4D93-99CF-8FDD7BD8CE50}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="External Assets\title-logo.png" />
+    <Content Include="Pages\Home\home.html" />
+    <Content Include="Pages\Home\home.css" />
+    <Content Include="Pages\Home\Menu\assets\facebook-logo.png" />
+    <Content Include="External Assets\main-backdrop.jpg" />
+    <Content Include="Pages\Home\Menu\assets\twitter-logo.png" />
+    <Content Include="index.html" />
+    <Content Include="Pages\Home\Menu\menu.html" />
+    <Content Include="Pages\Home\Menu\menu.css" />
+    <Content Include="packages.config" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.eot" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.ttf" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.woff" />
+    <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.svg" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\ie.css" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\ie.js" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\style.css" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_images1\updateimg0.png" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_images1\updateimg1.png" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_tooltips1\updateimg0.png" />
+    <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_tooltips1\updateimg1.png" />
+    <Content Include="Pages\Home\Updates\slider\slider.html" />
+    <Content Include="Pages\Home\Updates\updates.css" />
+    <Content Include="Pages\Home\Updates\updates.html" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Scripts\jquery-1.6.3.min.js" />
+    <Content Include="Scripts\knockout-3.4.0.debug.js" />
+    <Content Include="Scripts\knockout-3.4.0.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Home\Announcements\" />
+    <Folder Include="Pages\Quests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Addons\jquery.d.ts" />
+    <TypeScriptCompile Include="script.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knockout\tests\jasmine.extensions.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>practice</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45667</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:45667/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>system</TypeScriptModuleKind>
+    <TypeScriptOutFile>merge-file.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
