@@ -10,12 +10,13 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <ItemGroup>
     <Content Include="External Assets\title-logo.png" />
@@ -28,6 +29,8 @@
     <Content Include="Pages\Home\Menu\menu.html" />
     <Content Include="Pages\Home\Menu\menu.css" />
     <Content Include="packages.config" />
+    <Content Include="Pages\Home\News\news.css" />
+    <Content Include="Pages\Home\News\news.html" />
     <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.eot" />
     <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.ttf" />
     <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.woff" />
@@ -61,7 +64,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Home\Announcements\" />
     <Folder Include="Pages\Quests\" />
   </ItemGroup>
   <ItemGroup>

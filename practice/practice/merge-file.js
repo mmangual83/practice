@@ -1,3 +1,12 @@
+var News;
+(function (News) {
+    var Alerts = (function () {
+        function Alerts() {
+        }
+        return Alerts;
+    }());
+    News.Alerts = Alerts;
+})(News || (News = {}));
 var Source;
 (function (Source) {
     var Main = (function () {
@@ -7,7 +16,7 @@ var Source;
             //TODO: Initialize other classes here
         };
         return Main;
-    })();
+    }());
     Source.Main = Main;
 })(Source || (Source = {}));
 window.onload = function () {

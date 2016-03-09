@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="Pages/Home/News/news.css" type="text/css" />
+</head>
+<body>
+    <div class="news-window">
+        <ul id="news-list">
+            <template id="news-templates">
+                <li>
+                    <div class="news-author">Manny</div>
+                    <div class="news-body">Commented</div>
+                    <div class="news-read">
+                        <a href="#more">More</a>
+                    </div>
+                </li>
+            </template>
+        </ul>
+        <button onclick="useTemplate();" style="text-align:end;">Click Me to Use the Template!</button>
+    </div>
+
+    <script>
+        function useTemplate() {
+            var myTemplate = document.getElementById('news-templates'),
+            normalContent = document.getElementById('news-list'),
+            clonedTemplate = myTemplate.content.cloneNode(true);
+            normalContent.appendChild(clonedTemplate);
+        }
+    </script>
+</body>
+</html>
