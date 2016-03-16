@@ -29,6 +29,7 @@
     <Content Include="Pages\Home\Menu\menu.html" />
     <Content Include="Pages\Home\Menu\menu.css" />
     <Content Include="packages.config" />
+    <Content Include="Pages\Home\News\assets\news-backdrop.png" />
     <Content Include="Pages\Home\News\news.css" />
     <Content Include="Pages\Home\News\news.html" />
     <Content Include="Pages\Home\Updates\slider\cssslider_files\csss_engine1\cs-ctrl-basic.eot" />
@@ -68,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Addons\jquery.d.ts" />
+    <TypeScriptCompile Include="Pages\Home\News\news.ts" />
     <TypeScriptCompile Include="script.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\tests\jasmine.extensions.d.ts" />

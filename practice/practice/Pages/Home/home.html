@@ -1,14 +1,20 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Knights of Aether</title>
-        <link rel="stylesheet" href="Pages/Home/home.css" type="text/css" />
-    </head>
-    <body ng-app="">
-        <div class="main-greeter-text">
-            <h1>Knights of Aether</h1>
+<head>
+    <title>Knights of Aether</title>
+    <link rel="stylesheet" href="Pages/Home/home.css" type="text/css" />
+</head>
+<body ng-app="">
+    <div class="main-greeter-text">
+        <h1>Knights of Aether</h1>
+    </div>
+    <div class="user-access-options-window">
+        <div class="user-access-options-text">
+            <a href="UserAccessPages/signUp.html">Sign Up</a>
+            <a href="UserAccessPages/signIn.html">Sign In</a>
         </div>
-        <div ng-include="'Pages/Home/Menu/menu.html'"></div>
-        <div ng-include="'Pages/Home/Updates/updates.html'"></div>
-        <div ng-include="'Pages/Home/News/news.html'"></div>
-    </body>
+    </div>
+    <div ng-include="'Pages/Home/Menu/menu.html'"></div>
+    <div ng-include="'Pages/Home/Updates/updates.html'"></div>
+    <div ng-include="'Pages/Home/News/news.html'"></div>
+</body>
 </html>
