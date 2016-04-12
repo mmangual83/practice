@@ -1,0 +1,116 @@
+﻿#navBar {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width:100%;  
+    background-color: #808080;
+    box-shadow: 2px 4px rgba(0,0,0,0.2);
+    z-index: 3000;
+}
+
+#menuElements {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+#menuElements:last-child {
+    border-right: none;
+}
+
+#menuElements #menuItems {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menuElements #menuItems:hover:not(.active) {
+    background-color: #6902eb;
+}
+
+.active {
+    background-color: #3b0086;
+}
+
+.clearfix {
+    zoom:1;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #808080;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.facebook {
+    background-image: url('./assets/facebook-logo.png');
+    background-size: cover;
+    background-position:center;
+    width:45px;
+    height:45px;
+}
+
+.twitter {
+    background-image: url('./assets/twitter-logo.png');
+    background-size: cover;
+    background-position:center;
+    width:45px;
+    height:45px;
+}
+
+

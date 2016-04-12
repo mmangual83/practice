@@ -1,0 +1,59 @@
+﻿body {
+    position: absolute; 
+    /*background-image: url('../../Assets/Graphics/main-backdrop.jpg');*/
+    width:100%;
+    height:100%;
+    background-size: cover;
+    overflow:hidden;
+}
+.main-greeter-text {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: goldenrod;
+    text-shadow: 2px 2px #808080;
+    top: 4%;
+    left: 1%;
+}
+
+.user-access-options-window {
+    position: absolute;
+    width:210px;
+    height:100px;
+    top: 1%;
+    left:87%;
+    padding-top:10px;
+    padding-left: 10px;
+    text-align: center;
+    background-image: url('../../Assets/Graphics/user-access-backdrop.png');
+    background-size: cover;
+}
+.user-access-button-container {
+   position: absolute;
+   left: 9%;
+   top: 32%;
+}
+.user-access-button {
+    background-color: #b29a4a;
+    border-style:none;
+    border-radius: 4px 4px 4px 4px;
+    color: #ffffff;
+    width:80px;
+    height:40px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.user-access-button:hover {
+    cursor: pointer;
+    background-color: #70602c;
+}
+
+.user-access-options-text {
+    position:absolute;   
+}
+

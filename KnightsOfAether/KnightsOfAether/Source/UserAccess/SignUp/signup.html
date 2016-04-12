@@ -1,0 +1,63 @@
+﻿<div class="sign-up-main-page">
+    <div class="member-sign-in-container">
+        <p>Already a member? <a href="#signIn" onclick="KnightsOfAether.Home.OnSignInClicked()">Sign In</a></p>
+    </div>
+    <div class="register-form-container">
+        <div class="register-form-title">
+            <u>New Member Form</u>
+        </div>
+        <ul id="registration-form">
+            <li class="first-name" style="margin-bottom: 5%;">First Name <input type="text" maxlength="20" class="f-name-text"></li>
+            <li class="last-name" style="margin-bottom: 5%;">Last Name <input type="text" maxlength="20" class="1-name-text"></li>
+            <li class="e-mail" style="margin-bottom: 5%;">E-Mail <input type="email" class="e-mail-text"></li>
+            <li class="user-name" style="margin-bottom: 5%;">User Name <input type="text" class="user-name-text" maxlength="20"></li>
+            <li class="password" style="margin-bottom: 5%;">Password <input type="password" maxlength="20" class="password-text"></li>
+            <li class="confirm-password" style="margin-bottom: 10%;">Confirm Password <input type="password" class="confirm-password-text" maxlength="20"></li>
+            <li class="profile-pic-container" style="margin-bottom: 10%;">
+                <img class="profile-pic" />
+                <input type="file" id="profile_image" accept="image/jpeg" />
+            </li>
+            <li class="terms-and-conditions">
+                <input type="checkbox" class="terms-agree"> I agree to the <a href="#terms" onclick="UserAccessPages.ShowTermsAndConditions()" class="term-window">Terms & Conditions</a>
+            </li>
+        </ul>
+        <div class="sign-up-submit-button-container">
+            <button class="sign-up-submit-button" disabled>SUBMIT</button>
+        </div>
+    </div>
+</div>
+<div class="terms-container" hidden>
+    <div class="terms-backdrop"></div>
+    <div class="terms-main-window">
+        <div class="terms-title"><h1>Terms & Conditions</h1></div>
+        <div class="terms-text-message-container">
+            Lorem ipsum dolor sit amet, vel adipiscing concludaturque no, cu petentium iracundia vis. Ad detracto adipisci sit, an erant habemus ponderum vix, his ne eius fierent accusata. Viderer habemus eam ut. Wisi omnes ne sit. Hinc labores id pro, nulla option dolores eos te, et his urbanitas conceptam. Ut cum dicunt consetetur, mel dolor nullam sensibus an. Amet eros an pro, ea quo omnis quaerendum. Soleat animal id vix. Facer melius duo ea, enim causae necessitatibus in mel, prima apeirian petentium id mea. Dicat inani accusam cu per, duo id modus bonorum, harum exerci no est. Vel ei admodum patrioque, qui cu dico ubique. Ei ius omnis prodesset eloquentiam, primis aperiam omnesque has te. At pro minim mollis splendide. Stet scripserit pri in, eius lorem pertinacia ius ut. Mei omittantur complectitur contentiones id, cu facer honestatis his. Vel essent detracto ut. Ex saperet adolescens vim, ea vide aeque tincidunt pri. Nam dicam persequeris ut. Sea affert discere at, nonumes contentiones quo an, vidit appetere eu pro. Tale dissentiunt ad mei. Homero commodo vim ad, consulatu complectitur an vel, diam vitae legere no sea. Animal quaerendum eu vis, tota debitis perfecto sea ad. Nam hinc principes an, qui id congue nemore. Habeo quodsi consetetur id ius, atqui deleniti nam eu, mei in dico pertinax.
+        </div>
+        <div class="terms-close-button-container">
+            <button class="terms-close-button" onclick="UserAccessPages.HideTermsAndConditions()">CLOSE</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(function () {
+        $('#registration-form').find('.profile-pic-container').find('#profile_image').change(function (e) {
+
+            var newImg = URL.createObjectURL(e.target.files[0]);
+            var ext = this.value.match(/\.(.+)$/)[1];
+            var defImg = './Source/UserAccess/SignUp/assets/profile-picture-default.png';
+            var container = $('#registration-form').find('.profile-pic-container').find('.profile-pic');
+
+            switch (ext) {
+                case 'png':
+                case 'gif':
+                    container.attr('src', defImg);
+                    this.value = '';
+                    alert('This is not an allowed file type.');
+                    break;
+                default:
+                    container.attr('src', newImg);
+            }
+        });
+    });
+</script>

@@ -1,0 +1,13 @@
+[
+  {
+    "outputFileName": "Source/styles.css",
+    "inputFiles": [
+      "Source/Home/home.css",
+      "Source/Home/Menu/menu.css",
+      "Source/Home/News/news.css",
+      "Source/Home/Updates/updates.css",
+      "Source/UserAccess/useraccess.css",
+      "Source/UserAccess/SignUp/signup.css"
+    ]
+  }
+]
