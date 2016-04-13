@@ -25,11 +25,12 @@
     <Content Include="Assets\Graphics\main-backdrop.jpg" />
     <Content Include="Assets\Graphics\title-logo.png" />
     <Content Include="index.html" />
-    <Content Include="packages.config" />
     <None Include="bundleconfig.json" />
+    <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
-    <Content Include="Scripts\jquery-2.2.2.js" />
-    <Content Include="Scripts\jquery-2.2.2.min.js" />
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Source\Home\Menu\assets\facebook-logo.png" />
     <Content Include="Source\Home\Menu\assets\twitter-logo.png" />
     <Content Include="Assets\Graphics\user-access-backdrop.png" />
@@ -72,7 +73,7 @@
     <TypeScriptCompile Include="Source\UserAccess\SignUp\signup.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-2.2.2.min.map" />
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
